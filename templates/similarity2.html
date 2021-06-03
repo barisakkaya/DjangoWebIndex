@@ -1,0 +1,37 @@
+{% include "layout.html" %}
+{% block body %}
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Similarity scoring was made by comparing the keywords.</p>
+  <footer class="blockquote-footer">third requested</footer>
+</blockquote>
+<div class = "container">
+  <div class="row">
+    <div class="col-lg-6">
+      {% for i  in key1 %}
+        <li class = "list-group-item list-group-item-dark">{{i}}</li>
+        
+      {% endfor %}
+      {% for i in tagListeYeni %}
+        <li class = "list-group-item list-group-item-success">{{i}}</li>
+
+      {% endfor %}
+    </div>
+
+    <div class="col-lg-6">
+      {% for i in key2 %}
+        <li class = "list-group-item list-group-item-dark">{{i}}</li>
+
+      {% endfor %}
+      {% for i in tagListe2Yeni %}
+        <li class = "list-group-item list-group-item-success">{{i}}</li>
+
+      {% endfor %}
+    </div>
+  </div>
+  <br><br>
+  <div style="width60px:px;height:100%;background:white;border:3px solid;text-align:center;"> 
+      <h5>Similarity : %{{formul}}</h5>
+  </div>
+  <br><br>
+</div>
+{% endblock body %}

@@ -1,0 +1,15 @@
+{% include "layout.html" %}
+{% block body %}
+ <blockquote class="blockquote text-center">
+    <p class="mb-0">You can see the number of words in the url you entered below.</p>
+    <footer class="blockquote-footer">first requested</footer>
+    </blockquote>
+<div class = "container">
+    <ul>
+        {% for i in  say %}
+            <li class = "list-group-item list-group-item-dark">{{i}}</li>
+
+        {% endfor %}
+    </ul>
+</div>
+{% endblock body %}

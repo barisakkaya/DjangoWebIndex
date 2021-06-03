@@ -1,0 +1,23 @@
+{% include "layout.html" %}
+{% block body %}
+ <blockquote class="blockquote text-center">
+    <p class="mb-0">You can see synonyms within the set of websites you entered</p>
+    <footer class="blockquote-footer">fifth requested</footer>
+    </blockquote>
+<div class = "container">
+    <ul>
+        {% for i in  x %}
+            <li class = "list-group-item list-group-item-dark">{{i}}</li>
+
+        {% endfor %}
+        {% for i in  x2 %}
+            <li class = "list-group-item list-group-item-success">{{i}}</li>
+
+        {% endfor %}
+        {% for i in  x3 %}
+            <li class = "list-group-item list-group-item-light">{{i}}</li>
+
+        {% endfor %}
+    </ul>
+</div>
+{% endblock body %}

@@ -1,0 +1,14 @@
+{% include "layout.html" %}
+{% block body %}
+   <div class="container">
+         <form method= "post" class="ml-5 w-100 p-3">
+         {% csrf_token %}
+         {{form.as_p}}
+         <br>
+         <button type = "submit" class="btn btn-primary w-50 p-3">Calculate Similarity</button>
+         </form>
+
+   </div>
+ 
+      
+{% endblock body %}

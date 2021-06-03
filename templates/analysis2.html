@@ -1,0 +1,42 @@
+{% include "layout.html" %}
+{% block body %}
+ <blockquote class="blockquote text-center">
+    <p class="mb-0">Similarity scoring was made by comparing the keywords.</p>
+    <footer class="blockquote-footer">fourth requested</footer>
+    </blockquote>
+<div class = "container">
+    <ul>
+        {% for i in  x %}
+            <li class = "list-group-item list-group-item-dark">{{i}}</li>
+
+        {% endfor %}
+        {% for i in  x2 %}
+            <li class = "list-group-item list-group-item-success">{{i}}</li>
+
+        {% endfor %}
+        {% for i in  x3 %}
+            <li class = "list-group-item list-group-item-light">{{i}}</li>
+
+        {% endfor %}
+        <table class="table table-dark">
+        <thead>
+            <tr>
+            <th scope="col" style = "text-align:center;">Score Ranking</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for i in listeSozluk %}
+            <tr class="bg-success">
+            <th scope="row"></th>
+            <td>{{i}}</td>
+        
+            </tr>
+        {% endfor %}
+        
+        
+        </tbody>
+        </table>
+    </ul>
+   
+</div>
+{% endblock body %}

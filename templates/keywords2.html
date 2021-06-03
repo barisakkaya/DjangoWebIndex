@@ -1,0 +1,25 @@
+{% include "layout.html" %}
+{% block body %}
+ <blockquote class="blockquote text-center">
+    <p class="mb-0">Based on the most used words, h1 and h2 tags to find important words</p>
+    <footer class="blockquote-footer">second requested</footer>
+    </blockquote>
+<div class = "container">
+    <ul>
+        {% for i in  yeniSay %}
+            <li class = "list-group-item list-group-item-dark">{{i}}</li>
+
+        {% endfor %}
+
+        {% for i in  yeniSay2 %}
+            <li class = "list-group-item list-group-item-success">{{i}}</li>
+
+        {% endfor %}
+
+        {% for i in  yeniSay3 %}
+            <li class = "list-group-item list-group-item-info">{{i}}</li>
+
+        {% endfor %}
+    </ul>
+</div>
+{% endblock body %}
